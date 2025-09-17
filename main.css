@@ -1,12 +1,14 @@
+/*#region constants*/
 :root {
 	--prim-color: teal;
 	--bevel: 8px;
 }
-
+/*#endregion*/
 .card {
 	margin: 0.5em;
 	padding: 1em;
 	border-style: solid;
+	border-width: thin;
 	width: fit-content;
 	border-radius: var(--bevel);
 	border-color: var(--prim-color);
@@ -18,4 +20,12 @@
 }
 .row {
 	display: flex;
+	column-gap: normal;
 }
+.column {
+	flex-grow: 6;
+}
+.column-double {
+	flex-grow: 12;
+}
+

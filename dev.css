@@ -1,0 +1,10 @@
+:root {
+    --dev-color: red;
+}
+
+div {
+
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--dev-color);
+}

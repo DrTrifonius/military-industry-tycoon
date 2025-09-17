@@ -8,36 +8,35 @@
 	<link type="text/css" rel="stylesheet" href="./main.css" />
 </head>
 
-<body class="row">
-	<div hidden id="templates">
-		<div class="ui-card">
-			<h3 class="ui-header"></h3>
-			<p class="ui-c-body">
+<body> 
+	<div class="row">
 
+		<div class="column" >
+			
+			<h1>Military Complex</h1>
+			<p>
+				Generic intro text
 			</p>
+			<h2>Research and Development</h2>
+			<ul>
+				<li>research gun <button onclick="research('gun')">research</button></li>
+			</ul>
 		</div>
-	</div>
-	<div >
-
-		<h1>Military Complex</h1>
-		<p>
-			Generic intro text
-		</p>
-		<h2>Research and Development</h2>
-		<!-- <ul>
-			<li>research gun <button onclick="research('gun')">research</button></li>
-		</ul> -->
-		<div class="card">
-			<h3 class="card-header">5"/45 gun</h3>
-			<p class="card-body">
-				Standard 5 inch gun
-			</p>
+		<div id="gunList" class="column-double">
+			
+			<div class="card">
+				<h3 class="card-header">5"/45 gun</h3>
+				<p class="card-body">
+					Standard 5 inch gun
+				</p>
+			</div>		
 		</div>
-		
 	</div>
 </body>
 <script type="module">
 	import './main.js';
+
 </script>
+
 
 </html>
