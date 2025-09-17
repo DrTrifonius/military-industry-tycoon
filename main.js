@@ -6,6 +6,8 @@ import start_pos from "./start_pos.js";
 import * as templater from "./templater.js"
 
 
+log("loading main.js");
+
 window.research = function (topic) {
 	log(`research ${topic}`);
 }
