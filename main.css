@@ -2,6 +2,7 @@
 :root {
 	--prim-color: teal;
 	--bevel: 8px;
+	background-color: beige;
 }
 /*#endregion*/
 .card {
