@@ -4,6 +4,7 @@ import * as templater from "./js/templater.js";
 import { initSave } from "./js/persistence.js";
 import { initOverview } from "./overview/overview.js";
 import { initGunList } from "./guns/list/gunList.js";
+import { translatePage } from "./lang/translator.js";
 initSave();
 log("loading main.js");
 
@@ -20,3 +21,8 @@ start_pos.guns.forEach((gun) => {
 	const gunCard = templater.createCard(gun.name, gun.description);
 	document.querySelector("#gun_list").appendChild(gunCard);
 });
+
+await translatePage("en")
+
+document.querySelector("#loading_screen").setAttribute("hidden", "hidden")
+document.querySelector("#content").removeAttribute("hidden")

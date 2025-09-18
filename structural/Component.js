@@ -3,7 +3,7 @@
 /**
  * 
  * @param {string} templateFile 
- * @returns {element}
+ * @returns {Element}
  */
 export async function getComponent(templateFile){
 

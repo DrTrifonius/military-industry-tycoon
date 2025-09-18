@@ -10,6 +10,15 @@ const log = (str) => {
 }
 window.log = log
 
+/**
+ * 
+ * @param {string} selector 
+ * @returns {Element}
+ */
+window.dqs = function(selector) {
+	return document.querySelector(selector)
+}
+
 class Dev{
 	get borders(){
 		if (document.querySelector('#devborders')){
