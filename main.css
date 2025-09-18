@@ -1,7 +1,36 @@
-@import "/css/constants.css";
 @import "/css/general.css";
-
-.grid {
-	display: grid;
-
+/*#region constants*/
+:root {
+	--prim-color: teal;
+	--bevel: 0.5em;
+	--dev-color: red;
+	--bg-color: beige;
+	--nav-color: aquamarine;
+}
+/*#endregion*/
+:root {	
+	background-color: darkgrey;
+}
+body{
+	margin: auto;
+	max-width: 1200px;	
+	background-color:  var(--bg-color);
+}
+@media only screen and (min-width: 800px) {
+	#content {
+		display: grid;
+		grid-template-areas: 'top top top top top' 
+									'left left main main main'
+									'bottom bottom bottom bottom bottom';
+	}
+	#navbar {
+		grid-area: top;
+		background-color: var(--nav-color);
+	}
+	#general_pane {
+		grid-area: left;
+	}
+	#detail_pane {
+		grid-area: main;
+	}
 }
