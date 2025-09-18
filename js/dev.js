@@ -17,7 +17,7 @@ const log = (str) => {
 }
 window.log = log
 
-export const dev = {
+const dev = {
 	borders: function(){
 		if (document.querySelector('#devborders')){
 			document.querySelector('#devborders').remove()
@@ -26,4 +26,5 @@ export const dev = {
 		}
 	}
 }
+export default dev
 window.dev = dev

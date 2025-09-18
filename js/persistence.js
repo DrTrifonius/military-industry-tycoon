@@ -1,6 +1,8 @@
 import { SaveData } from "../classes/Save.js";
 
 export function initSave(){
-    localStorage.setItem("save", new SaveData())
-}
 
+    const newSave = new SaveData()
+    localStorage.setItem("save", JSON.stringify(newSave))
+    window.saveFile = newSave
+}

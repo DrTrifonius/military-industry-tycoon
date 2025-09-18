@@ -1,3 +1,10 @@
 export class SaveData{ 
-	gunList
+	gunList = []
+	#id = 0
+	get id() {
+		return ++this.#id
+	}
+	get lastId(){
+		return this.#id
+	}
 }
