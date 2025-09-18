@@ -1,0 +1,8 @@
+/*#region constants*/
+:root {
+	--prim-color: teal;
+	--bevel: 8px;
+	--dev-color: red;
+	--bg-color: beige;
+}
+/*#endregion*/

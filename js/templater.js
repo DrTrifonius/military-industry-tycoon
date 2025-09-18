@@ -1,5 +1,5 @@
 const templates = document.createElement('html');
-await fetch('./templates.html').then((response) => response.text()).then(text => templates.innerHTML = text)
+await fetch('./html/templates.html').then((response) => response.text()).then(text => templates.innerHTML = text)
 
 export function createCard(header, body) {
 	const template = templates.querySelector('body>.card');

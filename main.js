@@ -1,10 +1,10 @@
 
 
-import "./dev-env.js"
+import "./js/dev.js"
 
-import start_pos from "./start_pos.js";
-import * as templater from "./templater.js"
-import { initSave } from "./persistence.js";
+import start_pos from "./js/start_pos.js";
+import * as templater from "./js/templater.js"
+import { initSave } from "./js/persistence.js";
 initSave()
 log("loading main.js");
 

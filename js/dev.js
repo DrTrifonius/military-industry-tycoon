@@ -1,5 +1,7 @@
 const prod = false;
 //setDevEnv()
+const bordercss = '\
+		<link type="text/css" id="devborders" rel="stylesheet" href="/css/border.css" />'
 
 
 function setDevEnv() {
@@ -14,3 +16,14 @@ const log = (str) => {
 	}
 }
 window.log = log
+
+export const dev = {
+	borders: function(){
+		if (document.querySelector('#devborders')){
+			document.querySelector('#devborders').remove()
+		}else{
+			document.querySelector("head").insertAdjacentHTML("beforeend", bordercss);
+		}
+	}
+}
+window.dev = dev

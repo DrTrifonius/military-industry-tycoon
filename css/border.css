@@ -1,9 +1,7 @@
-:root {
-	--dev-color: red;
-}
+@import "/css/constants.css";
+
 
 div {
-
 	border-style: solid;
 	border-width: thin;
 	border-color: var(--dev-color);
