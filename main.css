@@ -16,12 +16,14 @@ body{
 	max-width: 1200px;	
 	background-color:  var(--bg-color);
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
 	#content {
 		display: grid;
-		grid-template-areas: 'top top top top top' 
-									'left left main main main'
-									'bottom bottom bottom bottom bottom';
+		grid-template-areas: 'top  top top' 
+									'left  main right'
+									'bottom bottom bottom';
+		grid-template-columns: 2fr 4fr 1fr;
+		grid-template-rows: auto max-content auto;
 	}
 	#navbar {
 		grid-area: top;
