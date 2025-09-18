@@ -1,4 +1,4 @@
-import { SaveData } from "../classes/Save.js";
+import { SaveData } from "/classes/Save.js";
 
 export function initSave(){
 
