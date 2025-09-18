@@ -1,4 +1,6 @@
 {
     "editor.insertSpaces": false,
     "prettier.useTabs": true,
+    "javascript.suggest.paths": false,
+    "path-intellisense.absolutePathToWorkspace": true
 }
