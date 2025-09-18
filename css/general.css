@@ -1,0 +1,17 @@
+
+:root {	
+	background-color: var(--bg-color);
+}
+.card {
+	margin: 0.5em;
+	padding: 1em;
+	border-style: solid;
+	border-width: thin;
+	width: fit-content;
+	border-radius: var(--bevel);
+	border-color: var(--prim-color);
+}
+.card-header,
+.card-body{
+	margin: 0em;
+}

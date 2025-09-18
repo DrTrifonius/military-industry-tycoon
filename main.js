@@ -14,11 +14,11 @@ window.research = function (topic) {
 
 log(start_pos);
 
-await initOverview(document.querySelector("#left_pane"));
-await initGunList(document.querySelector("#right_pane"));
+await initOverview(document.querySelector("#general_pane"));
+await initGunList(document.querySelector("#detail_pane"));
 start_pos.guns.forEach((gun) => {
 	const gunCard = templater.createCard(gun.name, gun.description);
-	document.querySelector("#gun_list").appendChild(gunCard);
+	document.querySelector("#gun_list")?.appendChild(gunCard);
 });
 
 await translatePage("en");

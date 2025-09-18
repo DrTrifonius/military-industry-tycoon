@@ -1,7 +1,7 @@
 /*#region constants*/
 :root {
 	--prim-color: teal;
-	--bevel: 8px;
+	--bevel: 0.5em;
 	--dev-color: red;
 	--bg-color: beige;
 }

@@ -1,32 +1,7 @@
 @import "/css/constants.css";
+@import "/css/general.css";
 
-:root {	
-	background-color: var(--bg-color);
-}
-.card {
-	margin: 0.5em;
-	padding: 1em;
-	border-style: solid;
-	border-width: thin;
-	width: fit-content;
-	border-radius: var(--bevel);
-	border-color: var(--prim-color);
-}
+.grid {
+	display: grid;
 
-.card-header,
-.card-body{
-	margin: 0em;
-}
-.row {
-	display: flex;
-	column-gap: normal;
-}
-.column {
-	flex-grow: 6;
-}
-.column-double {
-	flex-grow: 12;
-}
-.navbar {
-	display: flex;
 }
