@@ -1,8 +1,5 @@
+import { keys } from "/js/keys.js";
 import { SaveData } from "/classes/Save.js";
-
-const keys = {
-	save: "save",
-};
 
 export function initSave() {
 	const oldSave = localStorage.getItem(keys.save);

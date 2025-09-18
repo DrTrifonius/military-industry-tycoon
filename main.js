@@ -1,4 +1,4 @@
-import "/js/dev.js";
+import "./js/dev.js";
 import start_pos from "./js/start_pos.js";
 import * as templater from "./js/templater.js";
 import { initSave } from "./js/persistence.js";
@@ -14,15 +14,14 @@ window.research = function (topic) {
 
 log(start_pos);
 
-
-await initOverview(document.querySelector("#left_pane"))
-await initGunList(document.querySelector("#right_pane"))
+await initOverview(document.querySelector("#left_pane"));
+await initGunList(document.querySelector("#right_pane"));
 start_pos.guns.forEach((gun) => {
 	const gunCard = templater.createCard(gun.name, gun.description);
 	document.querySelector("#gun_list").appendChild(gunCard);
 });
 
-await translatePage("en")
+await translatePage("en");
 
-document.querySelector("#loading_screen").setAttribute("hidden", "hidden")
-document.querySelector("#content").removeAttribute("hidden")
+document.querySelector("#loading_screen").setAttribute("hidden", "hidden");
+document.querySelector("#content").removeAttribute("hidden");

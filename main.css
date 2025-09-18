@@ -27,4 +27,6 @@
 .column-double {
 	flex-grow: 12;
 }
-
+.navbar {
+	display: flex;
+}
