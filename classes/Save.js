@@ -1,6 +1,3 @@
-export class SaveData{
-    
-    constructor(){
-        
-    }
+export class SaveData{ 
+	gunList
 }

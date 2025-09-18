@@ -4,8 +4,8 @@ import "./dev-env.js"
 
 import start_pos from "./start_pos.js";
 import * as templater from "./templater.js"
-
-
+import { initSave } from "./persistence.js";
+initSave()
 log("loading main.js");
 
 window.research = function (topic) {
