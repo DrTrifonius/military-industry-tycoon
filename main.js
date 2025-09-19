@@ -24,4 +24,4 @@ start_pos.guns.forEach((gun) => {
 await translatePage("en");
 
 document.querySelector("#loading_screen").setAttribute("hidden", "hidden");
-document.querySelector("#content").removeAttribute("hidden");
+document.querySelector("#content").removeAttribute("style");
