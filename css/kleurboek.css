@@ -1,0 +1,16 @@
+:root {
+	background-color: black;
+}
+
+#navbar {
+	background-color: salmon;
+}
+#general_pane {
+	background-color: lightskyblue;
+}
+#detail_pane {
+	background-color: burlywood;
+}
+#right_pane {
+	background-color: lightslategrey;
+}

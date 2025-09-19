@@ -1,4 +1,7 @@
 @import "/css/general.css";
+@import "/css/grid/grid_grid.css";
+@import "/css/kleurboek.css";
+/* @import "/css/border.css"; */
 /*#region constants*/
 :root {
 	--prim-color: teal;
@@ -8,40 +11,9 @@
 	--nav-color: aquamarine;
 }
 /*#endregion*/
-:root {
-	background-color: lightgray;
-}
 body {
 	margin: auto;
 	max-width: 1200px;
 	background-color: var(--bg-color);
-}
-@media only screen and (min-width: 900px) {
-	#content {
-		display: grid;
-		min-height: 100vh;
-
-		grid-template-areas:
-			"top top top"
-			"left main right"
-			"bottom bottom bottom";
-		grid-template-columns: auto 1fr auto;
-		grid-template-rows: auto 1fr auto;
-	}
-	#navbar {
-		grid-area: top;
-		background-color: var(--nav-color);
-	}
-	#general_pane {
-		grid-area: left;
-		max-width: 200px;
-	}
-	#detail_pane {
-		grid-area: main;
-	}
-	#right_bar {
-		grid-area: right;
-		background-color: blueviolet;
-		min-width: 5em;
-	}
+	height: 100vh;
 }

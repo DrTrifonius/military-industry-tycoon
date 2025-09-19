@@ -1,0 +1,28 @@
+
+@media only screen and (min-width: 900px) {
+	#content {
+		display: grid;
+		min-height: 100vh;
+		grid-template-areas:
+			"top top top"
+			"left main right"
+			"bottom bottom right";
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto 1fr auto;
+	}
+	#navbar {
+		grid-area: top;
+	}
+	#general_pane {
+		grid-area: left;
+	}
+	#detail_pane {
+		grid-area: main;
+	}
+	#right_bar {
+		grid-area: right;
+	}
+	#content > * {
+		margin: 0.2rem;
+	}
+}
