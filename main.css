@@ -1,6 +1,6 @@
-@import "/css/general.css";
-@import "/css/grid/grid_grid.css";
-@import "/css/kleurboek.css";
+@import "/src/css/general.css";
+@import "/src/css/grid/grid_grid.css";
+@import "/src/css/kleurboek.css";
 /* @import "/css/border.css"; */
 /*#region constants*/
 :root {

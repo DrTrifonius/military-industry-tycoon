@@ -1,5 +1,5 @@
-import { keys } from "/js/keys.js";
-import { SaveData } from "/classes/Save.js";
+import { keys } from "/src/js/keys.js";
+import { SaveData } from "/src/classes/Save.js";
 
 export function initSave() {
 	const oldSave = localStorage.getItem(keys.save);
