@@ -8,10 +8,6 @@ import { translatePage } from "./lang/translator.js";
 initSave();
 log("loading main.js");
 
-window.research = function (topic) {
-	log(`research ${topic}`);
-};
-
 log(start_pos);
 
 await initOverview(document.querySelector("#general_pane"));
