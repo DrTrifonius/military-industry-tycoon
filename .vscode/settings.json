@@ -2,5 +2,6 @@
     "editor.insertSpaces": false,
     "prettier.useTabs": true,
     "javascript.suggest.paths": false,
-    "path-intellisense.absolutePathToWorkspace": true
+    "path-intellisense.absolutePathToWorkspace": true,
+    "liveServer.settings.fullReload": true
 }
