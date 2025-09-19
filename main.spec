@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('.','.')],
+    datas=[('src','src'), ('./index.html', '.') ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -36,5 +36,3 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
-workpath = "../build"
-distpath = "../dist"
