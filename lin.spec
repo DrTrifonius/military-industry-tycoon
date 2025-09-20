@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['main.py'],
+    ['lin.py'],
     pathex=[],
     binaries=[],
     datas=[('index.html', '.'), ('src', 'src')],
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='lin',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

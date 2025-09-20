@@ -1,4 +1,4 @@
-const prod = false;
+const prod = true;
 //setDevEnv()
 const bordercss = '\
 		<link type="text/css" id="devborders" rel="stylesheet" href="/css/border.css" />'
